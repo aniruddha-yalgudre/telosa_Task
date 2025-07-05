@@ -1,11 +1,10 @@
 import React, { useRef } from "react";
-import Card from "./Components/card";
+import Card from "./Components/Card";
 import SideBar from "./Components/SideBar";
 import TopNavbar from "./Components/TopNavbar";
 import Card2 from "./Components/Card2";
 
 const App = () => {
-  const containerRef = useRef(null);
 
   return (
     <>
@@ -92,6 +91,7 @@ const App = () => {
                 </section>
               </section>
             </div>
+
           </div>
         </div>
       </div>
