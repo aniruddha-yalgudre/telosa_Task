@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 
 const Card = () => {
+   
   const dataRef = useRef([
     {
       id: 1,
@@ -73,7 +74,7 @@ const Card = () => {
       if (i <= rating) {
         stars.push(<i key={i} className="ri-star-fill text-yellow-400 text-base"></i>);
       } else {
-        stars.push(<i key={i} className="ri-star-line text-gray-300 text-base"></i>);
+        stars.push(<i key={i} className="ri-star-line text-gray-400 text-base"></i>);
       }
     }
     return stars;

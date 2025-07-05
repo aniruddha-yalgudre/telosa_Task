@@ -94,7 +94,6 @@ const Card2 = () => {
           className="w-full mx-auto py-6 px-6 bg-white border-b-[1px] border-zinc-400"
         >
           <div className="flex items-start gap-3">
-            {/* Avatar */}
             <div className="w-10 h-10 flex-shrink-0 rounded-full overflow-hidden border-zinc-400 border-[1px]">
               <img
                 className="h-full w-full object-contain object-center"
@@ -103,23 +102,23 @@ const Card2 = () => {
               />
             </div>
 
-            {/* Content */}
             <div className="flex-1 min-w-0">
-              {/* Header with name and flag */}
               <div className="flex items-center gap-2 mb-1">
                 <h3 className="font-medium text-gray-900">{item.author}</h3>
                 <i className="ri-flag-fill w-4 h-4 text-red-500"></i>
               </div>
 
-              {/* Timestamp */}
-              <p className="text-sm text-gray-500 mb-4">Posted on: {item.date}</p>
+              <p className="text-sm text-gray-500 mb-4">
+                Posted on: {item.date}
+              </p>
 
-              {/* Star rating and score */}
               <div className="flex items-center gap-3 mb-4">
                 <div className="flex items-center gap-0.5">
                   {renderStars(item.rating)}
                 </div>
-                <span className="text-base font-medium text-gray-900 border-l-[1px]  border-zinc-400 px-2 ">{item.rating}.0</span>
+                <span className="text-base font-medium text-gray-900 border-l-[1px]  border-zinc-400 px-2 ">
+                  {item.rating}.0
+                </span>
               </div>
 
               {/* Review text */}
@@ -129,20 +128,20 @@ const Card2 = () => {
 
               {/* Action buttons */}
               <div className="flex items-center gap-1">
-                <button className="h-8 w-8 p-0 text-gray-500 hover:text-gray-700 transition-colors flex items-center justify-center">
-                  <i className="ri-heart-line w-4 h-4"></i>
+                <button className="w-8 h-8 text-gray-500 hover:text-gray-700 rounded-full border-[1px] border-zinc-400 transition-colors flex items-center justify-center">
+                  <i className="ri-heart-line text-base"></i>
                 </button>
-                <button className="h-8 w-8 p-0 text-gray-500 hover:text-gray-700 transition-colors flex items-center justify-center">
-                  <i className="ri-repeat-line w-4 h-4"></i>
+                <button className="w-8 h-8 text-gray-500 hover:text-gray-700 rounded-full border-[1px] border-zinc-400 transition-colors flex items-center justify-center">
+                  <i className="ri-repeat-line text-base"></i>
                 </button>
-                <button className="h-8 w-8 p-0 text-gray-500 hover:text-gray-700 transition-colors flex items-center justify-center">
-                  <i className="ri-share-line w-4 h-4"></i>
+                <button className="w-8 h-8 text-gray-500 hover:text-gray-700 rounded-full border-[1px] border-zinc-400 transition-colors flex items-center justify-center">
+                  <i className="ri-share-line text-base"></i>
                 </button>
-                <button className="h-8 w-8 p-0 text-gray-500 hover:text-gray-700 transition-colors flex items-center justify-center">
-                  <i className="ri-bookmark-line w-4 h-4"></i>
+                <button className="w-8 h-8 text-gray-500 hover:text-gray-700 rounded-full border-[1px] border-zinc-400 transition-colors flex items-center justify-center">
+                  <i className="ri-bookmark-line text-base"></i>
                 </button>
                 <button className="flex items-center gap-1 text-blue-600 text-sm hover:text-blue-700 transition-colors ml-2">
-                  <i className="ri-message-2-line w-4 h-4"></i>
+                  <i className="ri-message-2-line text-base"></i>
                   <span>
                     {item.replies} {item.replies === 1 ? "reply" : "replies"}
                   </span>

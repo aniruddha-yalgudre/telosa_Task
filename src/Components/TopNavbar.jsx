@@ -6,7 +6,7 @@ const TopNavbar = () => {
       <div className=" h-full w-full flex justify-between items-center px-4">
         <div className="search-part flex justify-start items-center gap-4">
           <i className="ri ri-box-line  text-xl"></i>
-          <h5 className=" text-zinc-400 ">Unified Inbox / <span className=" inline-block  text-zinc-700 "> Inbox </span> </h5>
+          <h5 className=" text-zinc-400 "> Unified Inbox / <span className=" inline-block  text-zinc-700 "> Inbox </span> </h5>
         </div>
 
         <div className="user-part flex justify-start items-center gap-4 ">
@@ -32,7 +32,6 @@ const TopNavbar = () => {
                 alt="logo"
               />
             </div>
-            {/* <i className="ri ri-arrow-down-s-line "></i> */}
           </div>
         </div>
       </div>
