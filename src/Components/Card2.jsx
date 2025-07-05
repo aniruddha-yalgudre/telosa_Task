@@ -121,27 +121,25 @@ const Card2 = () => {
                 </span>
               </div>
 
-              {/* Review text */}
               <p className="text-gray-700 text-sm leading-relaxed mb-4">
                 {item.desc}
               </p>
 
-              {/* Action buttons */}
               <div className="flex items-center gap-1">
-                <button className="w-8 h-8 text-gray-500 hover:text-gray-700 rounded-full border-[1px] border-zinc-400 transition-colors flex items-center justify-center">
-                  <i className="ri-heart-line text-base"></i>
+                <button className="w-6 h-6 text-gray-500 hover:text-gray-700 rounded-full border-[1px] border-zinc-400 transition-colors flex items-center justify-center">
+                  <i className="ri-heart-line text-xs"></i>
                 </button>
-                <button className="w-8 h-8 text-gray-500 hover:text-gray-700 rounded-full border-[1px] border-zinc-400 transition-colors flex items-center justify-center">
-                  <i className="ri-repeat-line text-base"></i>
+                <button className="w-6 h-6 text-gray-500 hover:text-gray-700 rounded-full border-[1px] border-zinc-400 transition-colors flex items-center justify-center">
+                  <i className="ri-repeat-line text-xs"></i>
                 </button>
-                <button className="w-8 h-8 text-gray-500 hover:text-gray-700 rounded-full border-[1px] border-zinc-400 transition-colors flex items-center justify-center">
-                  <i className="ri-share-line text-base"></i>
+                <button className="w-6 h-6 text-gray-500 hover:text-gray-700 rounded-full border-[1px] border-zinc-400 transition-colors flex items-center justify-center">
+                  <i className="ri-share-line text-xs"></i>
                 </button>
-                <button className="w-8 h-8 text-gray-500 hover:text-gray-700 rounded-full border-[1px] border-zinc-400 transition-colors flex items-center justify-center">
-                  <i className="ri-bookmark-line text-base"></i>
+                <button className="w-6 h-6 text-gray-500 hover:text-gray-700 rounded-full border-[1px] border-zinc-400 transition-colors flex items-center justify-center">
+                  <i className="ri-bookmark-line text-xs"></i>
                 </button>
                 <button className="flex items-center gap-1 text-blue-600 text-sm hover:text-blue-700 transition-colors ml-2">
-                  <i className="ri-message-2-line text-base"></i>
+                  <i className="ri-message-2-line text-xs"></i>
                   <span>
                     {item.replies} {item.replies === 1 ? "reply" : "replies"}
                   </span>
